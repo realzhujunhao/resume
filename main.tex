@@ -1,0 +1,159 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+
+\usepackage{hyperref}
+\hypersetup{colorlinks,urlcolor=blue}
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\newcommand{\R}[1]{\textcolor{Red}{#1}}
+\newcommand{\G}[1]{\textcolor{Green}{#1}}
+\newcommand{\F}[1]{\textcolor{Gray}{#1}}
+
+\newcommand{\cbox}[2]{\fcolorbox{black}{#1}{\rule{0pt}{3pt}\rule{3pt}{0pt}} 
+\textcolor{#1}{#2}}
+\name{Zhu Junhao} % Your name
+\address{realzhujunhao@gmail.com \\ https://github.com/realzhujunhao}
+
+\begin{document}
+\fontsize{8pt}{10pt}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{OBJECTIVE}
+
+{I am eager to pursue a Master’s degree in Computer Science, with a specific
+focus on distributed systems and computer network. While machine learning is not my
+primary area of interest, I am keen on conducting research that enhances the
+performance and usability of model training and inference, aiming to contribute
+innovative solutions that advance the field.}
+
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EDUCATION}
+
+{\bf Bachelor's Degree in Computer Science} \hfill {2021,3 - Ongoing}
+\\ 
+Yonsei University, South Korea GPA: 3.71/4.3, Major Ranking 49/177 (by the end of 7th semester)
+
+\end{rSection}
+
+\begin{rSection}{LANGUAGE}
+
+IELTS Listening/Speaking/Reading/Writing: 7.5/6.5/7.0/6.5 (overall 7.0)
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{KNOWLEDGE and SKILL \qquad
+\cbox{Green}{Familiar}\quad \cbox{black}{Basic}\quad \cbox{Red}{Limited}
+\quad \cbox{Gray}{Roughly understand}
+}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+General Coding & \G{Rust}, \G{Java}, \G{C}/\R{C++}, Go, \R{Javascript} \\
+
+Distributed System & \G{Map Reduce}, \G{Raft}, Zab (Zookeeper), RPC, \R{Transaction} \\
+Low Level Concurrency & \G{Mutex}, \G{Read-Write lock}, \G{Spin Lock}, \G{Conditional Variable}, \\
+                      & \G{Atomics and Memory Ordering}, \G{SIMD} (avx2 in specific) \\
+Network & \G{Socket}, \G{TCP/IP}, Routing Algorithms, DNS, ARP, DHCP, \R{Wireshark} \\
+Security & AES, \G{RSA}, \G{Diffie Hellman}, \G{Linux Namespace}, ROP, \F{FLUSH RELOAD}, \F{PRIME PROBE} \\
+Rust Ecosystem & \G{Tokio}, \G{Rayon}, \R{Iced}, Tonic (gRPC), etc. \\
+Cloud Native & Docker, \R{Kubernetes} \\
+Cloud Operation & \G{AWS CLI}, \G{Bash/Fish Script}, \G{Tmux}, \G{EC2}, \R{EKS}, \G{S3}, \G{Route53} \\
+GPU             & CUDA programming and optimization techniques \\
+Web Frontend (Js) & \R{React}, \R{Redux} \\
+Web Backend (Java) & \G{Spring Boot}, \R{Spring Data JPA}, \F{Spring Security}, \F{Spring cloud Eureka} \\
+Web Backend (Rust) & \G{Axum}, \R{Diesel} \\
+Middlewares       & Kafka, \R{ZeroMQ}, \F{Nginx}, \R{Redis}, \R{Flink} \\
+Editing & LaTeX, \G{NeoVim} \\
+\end{tabular}
+
+\end{rSection}
+
+\begin{rSection}{INTERESTED FIELD OF STUDY}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Distributed System & Multiple computers communicate over network to perform coherent tasks \\
+                   & Parallelism, Fault Tolerance, Synchronization, Security \\
+                   & Applications include but not limited to: \\
+                   & Cloud Computing, Distributed FS/DB/ML, Big Data, \\
+                   & Container Orchestration \\ \\
+Computer Network   & Infrastructure that provides services to distributed applications \\
+                   & Software-Defined Network, Internet of Things, Network Protocols \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{SIDE PROJECTS (clickable links colored in \textcolor{blue}{BLUE})}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+\href{https://github.com/realzhujunhao/jhchat}{jhchat}
+(1 year ago) & An end-to-end encrypted chat server and client with
+                      customized protocol codec, logging, \\ 
+                    & and key-exchange. Written before taking security course thus Diffie-Hellman wasn't used. \\
+\href{https://github.com/realzhujunhao/jhplot}{jhplot}
+(1 year ago) & GUI wrapper for plotting coordinated graphs \\
+\href{https://github.com/realzhujunhao/jhremote}{jhremote},
+\href{https://github.com/realzhujunhao/jhscripts}{jhscripts}
+& Bash/\href{https://fishshell.com/}{Fish} scripts for installing softwares and wrapping tools like
+\href{https://aws.amazon.com/cli/}{AWS CLI},
+\href{https://github.com/FFmpeg/FFmpeg}{ffmpeg}, 
+\href{https://github.com/openai/whisper}{whisper}, 
+\href{https://mg.readthedocs.io/latexmk.html}{latexmk}. \\
+\href{https://github.com/realzhujunhao/jhdns}{jhdns},
+\href{https://github.com/realzhujunhao/jhautomata}{jhautomata}
+& Implementation of concepts from coursework \\
+Others \& Upcoming & Please refer to my \href{https://github.com/realzhujunhao}{github account}
+\end{tabular}
+
+\end{rSection} 
+
+\begin{rSection}{INTERNSHIP/TRAININGS} 
+
+\href{https://elc.yonsei.ac.kr/}{Yonsei ELC Lab} \hfill 2023/12/27 - 2024/3/6 \\ 
+Professor: Bernd Burgstaller (\href{https://orcid.org/0000-0002-0374-8853}{ORCID}) 
+\qquad Supervisor: Dr. Shinhyung Yang (\href{https://orcid.org/0000-0002-8997-9942}{ORCID})
+\begin{itemize}
+\item a continuation of research aimed at enhancing the performance of stream processing engines.
+\item consulted several papers, namely 
+\href{https://arxiv.org/abs/2103.10169}{Hazelcast Jet},
+\href{https://raulcastrofernandez.com/papers/sigmod16-saber.pdf}{SABER},
+\href{https://arxiv.org/abs/1904.03604}{BriskStream},
+\href{https://www.usenix.org/system/files/conference/atc17/atc17-miao.pdf}{StreamBox},
+\href{https://ieeexplore.ieee.org/document/7530084}{Benchmarking Streaming Computation Engines},
+\href{https://dl.acm.org/doi/10.14778/3303753.3303758}{Analyzing Efficient Stream Processing on Modern Hardware}
+\item initiated an incomplete survey, I can share it upon approval from supervisor if needed
+\item contributed to a hybrid Java/C++ codebase for the paper
+\href{https://arxiv.org/abs/2205.09325}{Cloud Profiler} as well as benchmark
+scripts. In specific, I parallelized the data generator, visualized the
+progress, adjusted operator fussion, wrote bash scripts for automation,
+migrated versions and addressed breaking changes, assisted my supervisor with
+debugging barrier server. Gitlab commits are available upon approval if needed
+\end{itemize}
+{I am applying for a 4-month Computer Science lab internship in the next semester}       
+\hfill 2024/9/TBD - 2024/12/TBD
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+\end{document}
