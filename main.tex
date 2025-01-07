@@ -36,9 +36,9 @@
 
 \begin{rSection}{EDUCATION}
 
-{\bf Bachelor's Degree in Computer Science} \hfill {2021,3 - Ongoing}
+{\bf Bachelor's Degree in Computer Science} \hfill {2021,3 - 2025,2}
 \\ 
-Yonsei University, South Korea \qquad GPA: 3.71/4.3, 94.9\% (by the end of 7th semester) \\
+Yonsei University, South Korea \qquad GPA: 3.68/4.3, 94.1\% \\
 Total Scholarship Awarded 15,016,000 KRW \\
 Merit-based each year (Million Korean Won): 2021-3.07M, 2022-4.66M, 2023-5.44M, 2024-1.55M
 
@@ -70,15 +70,14 @@ IELTS Listening/Speaking/Reading/Writing: 7.5/6.5/7.0/6.5 (overall 7.0)
 }
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Distributed System & \G{Map Reduce}, \G{Raft}, Zookeeper, \G{RPC}, Transaction, Fork Consistency \\
-Low Level Concurrency & \G{Mutex/Read-Write/Spin lock}, \G{Conditional Variable}, \G{Atomics and Memory Ordering}
-, SIMD (avx2) \\
-Rust Ecosystem & \G{Tokio}, \G{Rayon}, \R{Iced}, Tonic (gRPC), \G{Axum}, \R{Diesel}, Clap, etc. \\
-Java Ecosystem & \G{Spring Boot}, Spring Data JPA, \G{Mybatis}, \F{Spring Security}, \F{Spring cloud Eureka}, etc. \\
+Distributed System & \G{Map Reduce}, \G{Raft}, Zookeeper, \G{RPC}, \G{Transaction}, Fork Consistency, Ethereum \\
+Rust Ecosystem & \G{Tokio}, \G{Rayon}, \G{Serde}, \G{Axum}, \R{Iced}, \G{Clap}, Tonic (gRPC), \R{Diesel}, etc. \\
+Java Ecosystem & \G{Spring Boot (Web tech-stack)}, \G{Mybatis}, Spring Data JPA, \F{Spring Security}, \F{Spring cloud}, etc. \\
 Cloud Native & Docker, Kubernetes \\
-Cloud Operation & \G{AWS CLI}, \G{Bash/Fish Script}, \G{Tmux}, \G{EC2}, \R{EKS}, \G{S3}, \G{Route53} \\
-Middlewares       & Kafka, \R{ZeroMQ}, Nginx, \R{Redis}, \R{Flink} \\
+Cloud Operation & \G{Bash/Fish Script}, \G{Tmux}, \G{AWS CLI}, \G{EC2}, \G{S3}, \G{S3}, \G{Route53}, \R{EKS}, etc. \\
+Middlewares       & Kafka, \R{ZeroMQ}, \G{Nginx}, Redis, \R{Flink} \\
 Editing & LaTeX, \G{NeoVim} \\
+Other Languages & \G{Go}, \G{C}/C++, SQL, Solidity \\
 \end{tabular}
 
 \end{rSection}
@@ -91,11 +90,11 @@ Editing & LaTeX, \G{NeoVim} \\
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 \href{https://github.com/realzhujunhao/jhchat}{jhchat}
-(2 year ago) & An end-to-end encrypted chat server and client with
+(2 years ago) & An end-to-end encrypted chat server and client with
                       customized protocol codec, logging, \\ 
                     & and key-exchange. Written before taking security course thus far from perfect. \\
 \href{https://github.com/realzhujunhao/jhplot}{jhplot}
-(2 year ago) & GUI wrapper for plotting coordinated graphs \\
+(2 years ago) & GUI wrapper for plotting coordinated graphs \\
 \href{https://github.com/realzhujunhao/jhremote}{jhremote},
 \href{https://github.com/realzhujunhao/jhscripts}{jhscripts}
 & Bash/\href{https://fishshell.com/}{Fish} scripts to automate tools like
@@ -109,6 +108,7 @@ Editing & LaTeX, \G{NeoVim} \\
 \href{https://github.com/realzhujunhao/nvim}{nvim},
 \href{https://github.com/realzhujunhao/jhconfig}{jhconfig}
 & My personal configurations \\
+others & Some AI wrapper projects and Web projects in private repository. \\
 \end{tabular}
 
 \end{rSection} 
@@ -150,15 +150,20 @@ automation, migrated versions and addressed breaking changes, assisted my
 supervisor with debugging barrier server.
 \end{itemize}
 
-\href{https://elc.yonsei.ac.kr/}{Yonsei ELC Lab} \quad Topic: Block Chain Testing (Ongoing) \hfill 2024/9 - TBD \\ 
+\href{https://elc.yonsei.ac.kr/}{Yonsei ELC Lab} \quad Topic: Block Chain
+Testing (Ongoing, may result in a publication) \hfill 2024/9 - Ongoing \\ 
 Professor: Bernd Burgstaller (\href{https://orcid.org/0000-0002-0374-8853}{ORCID}) 
 \begin{itemize}
 \item working on codebase adjacent to the paper
 \href{https://www.usenix.org/conference/atc21/presentation/kim-yeonsoo}{An
 Off-The-Chain Execution Environment for Scalable Testing and Profiling of Smart
-Contracts} that aims to verify the correctness of ethereum bytecode decompiler
-\item migrated customized decompiled contract interpreter to higher Geth verison
-\item debugging memory tracking upon external call (ongoing)
+Contracts}, our project aims to verify the correctness of ethereum bytecode decompiler
+\item Migrated a customized interpreter for executing decompiled EVM bytecode
+(provided by Dedaub) to a higher version of the Geth client.
+\item Diagnosed validation failures in decompiled bytecode by analyzing source
+code across multiple languages, including Solidity (smart contracts),
+decompiled EVM bytecode, and Go (interpreter), to identify root causes such as
+decompiler inaccuracies or implementation issues.
 \end{itemize}
 \end{rSection} 
 
